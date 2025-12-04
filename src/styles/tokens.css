@@ -1,0 +1,23 @@
+/* Chips Millésime Design Tokens */
+:root {
+  /* Typography - The "Wine Label" Approach */
+  --font-display: 'Playfair Display', 'Cinzel', serif; /* Elegant, traditional */
+  --font-body: 'Lato', 'Work Sans', sans-serif; /* Clean, modern readability */
+  --font-accent: 'Pinyon Script', cursive; /* For "Millésime 2023" signatures */
+  
+  /* Spatial System */
+  --space-unit: 0.5rem;
+  --container-max: 1200px; /* Tighter container for a boutique feel */
+  
+  /* Color Philosophy: Burgundy Terroir */
+  --color-wine-deep: #4A1A2C; /* Pinot Noir / Côte Chalonnaise base */
+  --color-wine-bright: #722F37; /* The ruby reflection */
+  --color-chip-gold: #D4AF37; /* The cooked potato / Gold accents */
+  --color-paper: #F4F1EA; /* Natural craft paper background */
+  --color-ink: #2C2C2C; /* Soft black for text */
+  --color-soil: #5D4037; /* Earthy tone for footers */
+  
+  /* Animation Timing */
+  --ease-slow-reveal: cubic-bezier(0.23, 1, 0.32, 1);
+  --duration-long: 800ms; /* Slow, luxurious movement */
+}

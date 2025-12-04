@@ -1,0 +1,28 @@
+/* Typography Setup */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&family=Pinyon+Script&family=Playfair+Display:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-wine-deep);
+}
+
+.vintage-year {
+    font-family: var(--font-accent);
+    color: var(--color-chip-gold);
+    font-size: 1.5em;
+    transform: rotate(-5deg);
+    /* Hand-stamped look */
+    display: inline-block;
+}
