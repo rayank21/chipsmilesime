@@ -17,21 +17,14 @@ const ProductShowcase = () => {
 
     const handleAddToCart = () => {
         addToCart({
-            id: 'chips-millesime-2025',
-            name: 'Chips Millésime 2025',
+            id: 'chips-millesime-2023',
+            name: 'Chips Millésime 2023',
             price: 2.50
         });
     };
 
     return (
-        <section className="product-showcase animate-entrance" style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '4rem',
-            alignItems: 'center',
-            padding: '4rem 0',
-            minHeight: '80vh'
-        }}>
+        <section className="product-showcase animate-entrance">
             {/* Left: The Story */}
             <div className="showcase-content">
                 <h2 style={{
@@ -63,7 +56,7 @@ const ProductShowcase = () => {
                     </p>
                     <ul style={{ listStyle: 'none', padding: 0 }}>
                         <li style={{ marginBottom: '0.5rem' }}>🥔 <strong>Base :</strong> Pommes de terre cultivées en Bourgogne.</li>
-                        <li style={{ marginBottom: '0.5rem' }}>🍷 <strong>Signature :</strong> Élaborée avec du Bourgogne rouge 2025 Côte Chalonnaise.</li>
+                        <li style={{ marginBottom: '0.5rem' }}>🍷 <strong>Signature :</strong> Élaborée avec du Bourgogne rouge 2023 Côte Chalonnaise.</li>
                         <li>👨‍🌾 <strong>Fabrication :</strong> Artisanale, par des producteurs locaux.</li>
                     </ul>
                 </div>
@@ -107,7 +100,7 @@ const ProductShowcase = () => {
                     textShadow: '0 2px 4px rgba(255,255,255,0.8)',
                     transform: `translateY(${offset * -0.02}px)`
                 }}>
-                    2025
+                    2023
                 </div>
             </div>
         </section>

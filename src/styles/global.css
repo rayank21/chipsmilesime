@@ -1,8 +1,6 @@
 /* Global Styles */
 body {
     background-color: var(--color-paper);
-    /* background-image: url("path/to/noise-texture.png"); */
-    /* TODO: Add texture */
     color: var(--color-ink);
     margin: 0;
     padding: 0;
@@ -19,11 +17,9 @@ body {
 /* The "Wine Stain" Gradient */
 .hero-section {
     background: radial-gradient(circle at 80% 20%, var(--color-wine-bright), var(--color-wine-deep));
-    /* Represents the depth of the red wine used in the recipe */
     color: var(--color-paper);
     padding: 4rem 2rem;
     border-radius: 4px;
-    /* Slight rounding, not too much */
 }
 
 /* Button Styles */
@@ -49,7 +45,6 @@ button {
     color: var(--color-wine-deep);
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(114, 47, 55, 0.2);
-    /* Red wine shadow */
 }
 
 /* Animations */
@@ -67,4 +62,67 @@ button {
 
 .animate-entrance {
     animation: floatUp 1.2s var(--ease-slow-reveal) forwards;
+}
+
+/* Responsive Styles */
+.product-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 4rem 0;
+    min-height: 80vh;
+}
+
+.landing-header {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.b2b-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .product-showcase {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .product-showcase .showcase-content {
+        order: 2;
+    }
+
+    .product-showcase .showcase-visual {
+        order: 1;
+        height: 300px !important;
+        margin-bottom: 2rem;
+    }
+
+    .landing-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .landing-header>div {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .b2b-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 2.5rem !important;
+    }
 }

@@ -9,15 +9,7 @@ const LandingPage = () => {
 
     return (
         <div className="landing-page">
-            <header style={{
-                textAlign: 'center',
-                padding: '2rem 0',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                maxWidth: 'var(--container-max)',
-                margin: '0 auto'
-            }}>
+            <header className="landing-header">
                 <div style={{ width: '150px', textAlign: 'left' }}>
                     <Link to="/pro" style={{
                         fontSize: '0.9rem',
@@ -31,7 +23,7 @@ const LandingPage = () => {
 
                 <div style={{ textAlign: 'center' }}>
                     <img src={Logo} alt="Chips Millésime" style={{ height: '80px', marginBottom: '0.5rem' }} />
-                    <div className="vintage-year" style={{ fontSize: '1rem' }}>2025 Côte Chalonnaise</div>
+                    <div className="vintage-year" style={{ fontSize: '1rem' }}>2023 Côte Chalonnaise</div>
                 </div>
 
                 <div style={{ width: '150px', textAlign: 'right' }}>
